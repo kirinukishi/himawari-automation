@@ -110,8 +110,15 @@ header {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .btn {
@@ -134,59 +141,68 @@ header {
     box-shadow: 0 15px 30px var(--primary-glow);
 }
 
-/* Flow Section */
+/* Timeline Section */
 .flow-section {
     padding: 100px 0;
     background: var(--white);
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 60px;
+.timeline {
+    display: grid;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.flow-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.flow-item {
-    text-align: center;
-    flex: 1;
-    min-width: 200px;
+.timeline-phase {
+    position: relative;
     padding: 30px;
-    border-radius: 20px;
     background: var(--light);
-    transition: var(--transition);
+    border-radius: 24px;
+    border-left: 6px solid var(--primary);
 }
 
-.flow-item:hover {
-    transform: scale(1.05);
-}
-
-.flow-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.flow-item h3 {
+.phase-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
     margin-bottom: 12px;
-    font-size: 1.3rem;
 }
 
-.flow-item p {
-    font-size: 0.95rem;
+.timeline-phase h3 {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    color: var(--dark);
+}
+
+.step-list {
+    list-style: none;
+}
+
+.step-list li {
+    padding-left: 24px;
+    margin-bottom: 12px;
+    font-size: 1rem;
     color: var(--gray);
+    position: relative;
 }
 
-.arrow {
-    font-size: 2rem;
+.step-list li::before {
+    content: '•';
     color: var(--primary);
     font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+.step-list li strong {
+    color: var(--dark);
 }
 
 /* Features */
@@ -280,9 +296,11 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
     .hero-text h1 {
         font-size: 2.5rem;
     }
+
     .arrow {
         display: none;
     }

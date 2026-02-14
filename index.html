@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -33,30 +37,45 @@
 
     <section id="flow" class="flow-section">
         <div class="container">
-            <h2 class="section-title">システムフローの全体像</h2>
-            <div class="flow-container">
-                <div class="flow-item">
-                    <div class="flow-icon">📝</div>
-                    <h3>01. 申し込み</h3>
-                    <p>フォーム回答後、即座に管理台帳へ自動登録。</p>
+            <h2 class="section-title">全47ステップの徹底自動化</h2>
+            <div class="timeline">
+                <div class="timeline-phase">
+                    <span class="phase-tag">Phase 01</span>
+                    <h3>体験申込 〜 FBグループ参加（リマインドA~C）</h3>
+                    <ul class="step-list">
+                        <li><strong>自動登録:</strong> 申込後0分で管理台帳へ全ての個人情報を集約。</li>
+                        <li><strong>FB参加チェック:</strong> あなたが「FB参加」列をポチッと押すと、自動でステータスが「FB申込済」へ。</li>
+                        <li><strong>督促自動化:</strong> 5日前までに申し込んだ人が「5日経ってもFB未加入」なら、リマインドCを自動送信。</li>
+                    </ul>
                 </div>
-                <div class="arrow">→</div>
-                <div class="flow-item">
-                    <div class="flow-icon">🔔</div>
-                    <h3>02. 案内・課題</h3>
-                    <p>ステップに合わせ、適切なリマインドを自動配信。</p>
+
+                <div class="timeline-phase">
+                    <span class="phase-tag">Phase 02</span>
+                    <h3>講座前カウントダウン（リマインドD~G & 脱落判定）</h3>
+                    <ul class="step-list">
+                        <li><strong>7日前・3日前・前日リマインド:</strong> 講座日に合わせて自動配信。直前申込者には重複して送らないスマートフィルタ付き。</li>
+                        <li><strong>18:00の死守ライン:</strong> 講座前日の18時に「課題0」が未提出なら、システムが自動で「脱落」へ。リマインドも即停止。</li>
+                        <li><strong>当日9:00:</strong> 課題提出済みの「本気の人」だけに、当日のZoomリンクを最終案内。</li>
+                    </ul>
                 </div>
-                <div class="arrow">→</div>
-                <div class="flow-item">
-                    <div class="flow-icon">✅</div>
-                    <h3>03. 講座・面談</h3>
-                    <p>チェック一つで次のフェーズへ。脱落防止も万全。</p>
+
+                <div class="timeline-phase">
+                    <span class="phase-tag">Phase 03</span>
+                    <h3>講座実施 〜 3日間の熱狂（リマインドH~P）</h3>
+                    <ul class="step-list">
+                        <li><strong>アーカイブ翌朝配信:</strong> 講座翌日の9時に、前日の録画URLを自動でメール＆ステータス更新。</li>
+                        <li><strong>継続判定:</strong> 2日目、3日目と進むたびに「前回の課題」が出ているかシステムが監視。未提出者はその場で「脱落」へ。</li>
+                    </ul>
                 </div>
-                <div class="arrow">→</div>
-                <div class="flow-item">
-                    <div class="flow-icon">🤝</div>
-                    <h3>04. 契約・入金</h3>
-                    <p>最終的なご契約までを一元管理で追跡。</p>
+
+                <div class="timeline-phase">
+                    <span class="phase-tag">Phase 04</span>
+                    <h3>アンケート 〜 面談確定（リマインドQ~Z）</h3>
+                    <ul class="step-list">
+                        <li><strong>多機能フォーム連携:</strong> アンケート回答が届くと、管理台帳に希望日を自動で転記し「アンケート済」へ。</li>
+                        <li><strong>日程確定マジック:</strong> あなたが面談日をスプシに入力するだけで、1時間以内に確定メールQを自動送信。</li>
+                        <li><strong>個別フォロー:</strong> 面談の日程が決まっていない人だけに、ステップメールR〜Tを順次配信。</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -104,4 +123,5 @@
         </div>
     </footer>
 </body>
+
 </html>
